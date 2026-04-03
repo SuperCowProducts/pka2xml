@@ -14,6 +14,21 @@ docker build -t pka2xml:1.0.0 . && docker run -it pka2xml:1.0.0
 ```
 
 ### Building manually
+
+Installing dependencies
+```
+sudo dnf install -y cryptopp-devel
+sudo dnf install -y re2-devel
+sudo dnf install -y zlib-ng-compat-static
+sudo dnf install -y chapel
+sudo dnf install -y cryptopp-static
+sudo dnf install -y libstdc++-devel
+sudo dnf install -y libstdc++-static
+sudo dnf install -y glibc-static
+```
+
+
+
 To build a static binary:
 
 ```
