@@ -12,7 +12,7 @@ dynamic-install: pka2xml-dynamic patch-dynamic install
 
 .PHONY: pka2xml-static
 pka2xml-static: main.cpp
-	g++ -o pka2xml main.cpp -I/usr/local/include /usr/lib/libz.a /usr/local/lib/libre2.a /usr/local/lib/libcryptopp.a -lpthread -static -static-libstdc++
+	g++ -o pka2xml main.cpp -I/usr/local/include /usr/lib64/libz.a /usr/lib/chapel/2.3/third-party/re2/install/linux64-aarch64-native-llvm-none/lib/libre2.a /usr/lib64/libcryptopp.a -lpthread -static -static-libstdc++
 
 .PHONY: pka2xml-static-docker
 pka2xml-static-docker: main.cpp
